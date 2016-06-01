@@ -9,7 +9,8 @@ Gothenburg Restaursnts is a Decision Support System that helps users locate rest
 ![alt tag](https://github.com/ThomasEmilsson/Gothenburg-Restaurants/blob/master/Executable/Images/SignIn.png)
 
 
-This project was created by the following
+This project was created by the following:
+
     • Thomas Emilsson
     • Aras Bazyan
     • Mattias Jerrewing
