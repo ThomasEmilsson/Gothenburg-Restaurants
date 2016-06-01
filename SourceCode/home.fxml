@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- @author thomasemilsson -->
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomeController">
+	<children>
+      <ImageView fitHeight="600.0" fitWidth="801.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@HomeBack.jpg" />
+         </image></ImageView>
+		<Button fx:id="button_EnterPostalCode" layoutX="514.0" layoutY="225.0" mnemonicParsing="false" onAction="#goToRestaurantList" prefHeight="52.0" prefWidth="159.0" text="SEARCH">
+			<font>
+				<Font name="Optima Bold" size="26.0" />
+			</font>
+		</Button>
+		<TextField fx:id="textField_EnterPostalCode" alignment="CENTER" layoutX="296.0" layoutY="216.0" onAction="#goToRestaurantList" prefHeight="70.0" prefWidth="210.0" promptText="Enter Postal Code" style="-fx-border-color: #ECEFF1;">
+			<font>
+				<Font name="Optima Bold" size="23.0" />
+			</font>
+			<effect>
+				<Blend />
+			</effect>
+		</TextField>
+		<Separator fx:id="seperatorTop" layoutY="530.0" prefHeight="3.0" prefWidth="801.0" />
+		<Separator fx:id="seperatorBottom" layoutY="50.0" prefHeight="5.0" prefWidth="800.0" />
+		<Button fx:id="buttonOwner" layoutX="727.0" layoutY="13.0" mnemonicParsing="false" onAction="#goToOwner" prefHeight="30.0" prefWidth="60.0" text="Owner" />
+		<Label layoutX="663.0" layoutY="20.0" text="SIGN IN" textFill="WHITE" />
+		<Label alignment="CENTER" layoutX="14.0" layoutY="14.0" text="TEAM FOUR PROJECT" textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Tahoma" size="22.0" />
+			</font>
+		</Label>
+		<Button fx:id="buttonAboutUs" layoutX="14.0" layoutY="546.0" mnemonicParsing="false" onAction="#goToAboutUs" prefHeight="40.0" prefWidth="100.0" text="About Us">
+			<font>
+				<Font name="Optima Bold" size="18.0" />
+			</font>
+		</Button>
+		<Button fx:id="buttonFAQ" layoutX="687.0" layoutY="546.0" mnemonicParsing="false" onAction="#goToFAQ" prefHeight="40.0" prefWidth="100.0" text="FAQ">
+			<font>
+				<Font name="Optima Bold" size="20.0" />
+			</font>
+		</Button>
+		<Label alignment="CENTER" layoutX="121.0" layoutY="546.0" prefHeight="40.0" prefWidth="123.0" text="Click Here To Find Out More About Us" textFill="WHITE" wrapText="true" />
+		<Label layoutX="607.0" layoutY="558.0" text="Confused?" textFill="WHITE" />
+		<ToggleButton fx:id="advancedSearch" layoutX="333.0" layoutY="300.0" mnemonicParsing="false" onAction="#showAdvancedSearch" prefHeight="40.0" prefWidth="135.0" text="Advanced Search">
+			<font>
+				<Font name="Optima Bold" size="14.0" />
+			</font>
+		</ToggleButton>
+      <Label fx:id="InvalidPostalCode" layoutX="286.0" layoutY="176.0" prefHeight="30.0" prefWidth="231.0" text="    Please Enter A Valid Postal Code" textAlignment="CENTER" textFill="#ff1818" visible="false" />
+      <Pane fx:id="Pane_AdvancedSearch" layoutX="126.0" layoutY="347.0" prefHeight="175.0" prefWidth="550.0" style="-fx-border-color: WHITE; -fx-background-color: BLACK;" visible="false">
+         <children>
+            <CheckBox fx:id="includePostalCode" layoutX="168.0" layoutY="136.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="214.0" text="Include Postal Code Above" textAlignment="CENTER" textFill="WHITE" />
+            <ChoiceBox fx:id="foodTypeList" layoutX="126.0" layoutY="14.0" prefHeight="27.0" prefWidth="135.0" />
+            <Label alignment="CENTER" layoutX="14.0" layoutY="18.0" prefHeight="19.0" prefWidth="100.0" text="Food Type -&gt;" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="showMostPopular" layoutX="30.0" layoutY="106.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="231.0" text="Show Most Viewed Restaurants" textFill="WHITE" />
+            <CheckBox fx:id="showHighRating" layoutX="30.0" layoutY="58.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="251.0" text="Show Highest Ranked Restaurants" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="281.0" layoutY="18.0" prefHeight="19.0" prefWidth="94.0" text="Options* -&gt;" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="94.0" prefHeight="3.0" prefWidth="26.0" rotate="90.0" text="&lt; - &gt;" textFill="WHITE">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <MenuButton fx:id="optionList" layoutX="391.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="135.0" textFill="#000000c5">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <Label layoutX="389.0" layoutY="54.0" prefHeight="17.0" prefWidth="135.0" text="*Multiple options can" textFill="WHITE" />
+            <Label layoutX="404.0" layoutY="75.0" text=" be selected at once" textFill="WHITE" />
+         </children>
+      </Pane>
+	</children>
+</AnchorPane>

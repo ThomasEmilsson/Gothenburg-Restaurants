@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- @author Axel
+	@author Aras -->
+	
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="Review" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReviewController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@revBack.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="348.0" layoutY="28.0" prefHeight="52.0" prefWidth="106.0" text="Reviews" textAlignment="CENTER" textFill="#fcfcfc">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonBackToHome" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToRestaurant" prefHeight="40.0" prefWidth="80.0" text="BACK">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="buttonGoHome" layoutX="706.0" layoutY="14.0" mnemonicParsing="false" onAction="#goHome" prefHeight="40.0" prefWidth="80.0" text="HOME">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <ScrollPane fx:id="sPane" hbarPolicy="NEVER" layoutX="179.0" layoutY="104.0" maxHeight="415.0" maxWidth="443.0" minHeight="415.0" minWidth="218.0" prefHeight="415.0" prefWidth="443.0" vbarPolicy="ALWAYS">
+         <content>
+            <VBox fx:id="revBox" prefHeight="24.0" prefWidth="423.0" spacing="20.0" />
+         </content>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ScrollPane>
+      <Button fx:id="write" layoutX="335.0" layoutY="547.0" mnemonicParsing="false" onAction="#goReview" prefHeight="32.0" prefWidth="133.0" text="Write a Review" />
+   </children>
+</AnchorPane>

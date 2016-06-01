@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- @author Amanda
+	@author Thomas
+	@author Aras -->
+	
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RestaurantListController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resMenu.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="252.0" layoutY="28.0" prefHeight="52.0" prefWidth="373.0" text="Suggested Restaurants" textAlignment="CENTER" textFill="#fcfcfc">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonBackToHome" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goHome" prefHeight="40.0" prefWidth="80.0" text="BACK">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="buttonGoHome" layoutX="706.0" layoutY="14.0" mnemonicParsing="false" onAction="#goHome" prefHeight="40.0" prefWidth="80.0" text="HOME">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <ScrollPane hbarPolicy="NEVER" layoutX="275.0" layoutY="120.0" maxHeight="438.0" maxWidth="243.0" minHeight="410.0" minWidth="213.0" prefHeight="438.0" prefWidth="216.0" vbarPolicy="ALWAYS">
+         <content>
+            <VBox fx:id="restBox" prefHeight="24.0" prefWidth="202.0" spacing="0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></VBox>
+         </content>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ScrollPane>
+   </children>
+</AnchorPane>

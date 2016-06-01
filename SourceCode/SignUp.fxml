@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- @author Mattias
+	@author Thomas
+	@author Aras-->
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUpController">
+	<children>
+      <ImageView fitHeight="604.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@signup.jpg" />
+         </image>
+      </ImageView>
+		<Separator layoutY="70.0" prefWidth="800.0" />
+		<Button fx:id="buttonReturn" graphicTextGap="55.0" layoutX="706.0" layoutY="14.0" mnemonicParsing="false" onAction="#goHome" prefHeight="40.0" prefWidth="80.0" text="Home">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TextField fx:id="firstName" layoutX="380.0" layoutY="128.0" prefHeight="25.0" prefWidth="250.0" />
+      <TextField fx:id="lastName" layoutX="380.0" layoutY="167.0" prefHeight="27.0" prefWidth="250.0" />
+      <TextField fx:id="email" layoutX="380.0" layoutY="207.0" prefHeight="27.0" prefWidth="250.0" />
+      <TextField fx:id="password" layoutX="380.0" layoutY="247.0" prefHeight="25.0" prefWidth="250.0" />
+      <TextField fx:id="passwordConfirm" layoutX="380.0" layoutY="287.0" prefHeight="27.0" prefWidth="250.0" />
+      <TextField fx:id="phoneNumber" layoutX="380.0" layoutY="327.0" prefHeight="27.0" prefWidth="250.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="200.0" layoutY="120.0" prefHeight="40.0" prefWidth="150.0" text="First Name" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="200.0" layoutY="240.0" prefHeight="40.0" prefWidth="150.0" text="Password" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="200.0" layoutY="160.0" prefHeight="40.0" prefWidth="150.0" text="Last Name" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="197.0" layoutY="200.0" prefHeight="40.0" prefWidth="150.0" text="Email" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="200.0" layoutY="280.0" prefHeight="40.0" prefWidth="150.0" text="Confirm Password" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="200.0" layoutY="320.0" lineSpacing="2.0" prefHeight="40.0" prefWidth="150.0" text="Phone Number*" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonSubmit" graphicTextGap="55.0" layoutX="329.0" layoutY="425.0" mnemonicParsing="false" onAction="#goToOwner" prefHeight="37.0" prefWidth="137.0" text="Submit">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="579.0" lineSpacing="2.0" prefHeight="25.0" prefWidth="302.0" text="*Your phone number can be used to retrieve your password" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="14.0" text="Register" textFill="WHITE">
+         <font>
+            <Font name="Al Tarikh Regular" size="43.0" />
+         </font>
+      </Label>
+      <Label fx:id="inputErrorText" layoutX="355.0" layoutY="93.0" prefHeight="17.0" prefWidth="130.0" textFill="#e40d0d" />
+      <Button fx:id="buttonReturn1" graphicTextGap="55.0" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="80.0" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+	</children>
+</AnchorPane>

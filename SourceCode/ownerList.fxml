@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- @author Mattias
+	@author Aras -->
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OwnerListController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resL.jpg" />
+         </image>
+      </ImageView>
+      <ListView fx:id="listbox" layoutX="175.0" layoutY="91.0" prefHeight="322.0" prefWidth="451.0" />
+      <Button fx:id="btnAdd" layoutX="175.0" layoutY="430.0" mnemonicParsing="false" onAction="#goAdd" prefHeight="35.0" prefWidth="100.0" text="Add new" />
+      <Button fx:id="btnDelete" layoutX="288.0" layoutY="430.0" mnemonicParsing="false" onAction="#goDelete" prefHeight="35.0" prefWidth="100.0" text="Delete" />
+      <Button fx:id="btnEdit" layoutX="407.0" layoutY="430.0" mnemonicParsing="false" onAction="#goEdit" prefHeight="35.0" prefWidth="100.0" text="Edit" />
+      <Button fx:id="btnLogout" layoutX="526.0" layoutY="430.0" mnemonicParsing="false" onAction="#goLogout" prefHeight="35.0" prefWidth="100.0" text="Log out" />
+      <Label fx:id="lblName" layoutX="338.0" layoutY="44.0" prefHeight="17.0" prefWidth="211.0" text="Welcome" textFill="WHITE" />
+   </children>
+</AnchorPane>

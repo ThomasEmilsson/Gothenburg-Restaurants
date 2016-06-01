@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- @author Axel
+	@author Aras -->
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="WriteReview" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WriteReviewController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@rev.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="319.0" layoutY="28.0" prefHeight="52.0" prefWidth="165.0" text="Write review" textAlignment="CENTER" textFill="#fcfcfc">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonBackToHome" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goReview" prefHeight="40.0" prefWidth="79.0" text="BACK">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="buttonGoHome" layoutX="707.0" layoutY="14.0" mnemonicParsing="false" onAction="#goHome" prefHeight="40.0" prefWidth="79.0" text="HOME">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="ToRestaurant" layoutX="315.0" layoutY="506.0" mnemonicParsing="false" onAction="#goToRestaurant" prefHeight="40.0" prefWidth="174.0" text="Back o the Restaurant" />
+      <TextField fx:id="email" layoutX="280.0" layoutY="149.0" prefHeight="31.0" prefWidth="241.0" />
+      <Label layoutX="184.0" layoutY="154.0" text="Email adress:" textFill="WHITE" />
+      <TextArea fx:id="review" layoutX="281.0" layoutY="194.0" prefHeight="146.0" prefWidth="241.0" wrapText="true" />
+      <Label layoutX="220.0" layoutY="194.0" text="Review:" textFill="WHITE" />
+      <Button fx:id="Save" layoutX="358.0" layoutY="357.0" mnemonicParsing="false" onAction="#SaveReview" prefHeight="31.0" prefWidth="86.0" text="Save" />
+      <Group layoutX="281.0" layoutY="117.0">
+         <children>
+            <RadioButton fx:id="one" mnemonicParsing="false" text="1" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="reviews" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="two" layoutX="52.0" mnemonicParsing="false" text="2" textFill="WHITE" toggleGroup="$reviews" />
+            <RadioButton fx:id="three" layoutX="103.0" mnemonicParsing="false" text="3" textFill="WHITE" toggleGroup="$reviews" />
+            <RadioButton fx:id="five" layoutX="203.0" mnemonicParsing="false" text="5" textFill="WHITE" toggleGroup="$reviews" />
+            <RadioButton fx:id="four" layoutX="154.0" mnemonicParsing="false" text="4" textFill="WHITE" toggleGroup="$reviews" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Group>
+      <Label fx:id="saved" layoutX="350.0" layoutY="417.0" prefHeight="21.0" prefWidth="100.0" textFill="WHITE" />
+   </children>
+</AnchorPane>

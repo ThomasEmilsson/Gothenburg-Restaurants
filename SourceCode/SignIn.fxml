@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- @author Mattias
+	@author Aras -->
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="goSignUp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignInController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@signin.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="email" layoutX="331.0" layoutY="207.0" prefHeight="25.0" prefWidth="250.0" />
+      <TextField fx:id="password" layoutX="331.0" layoutY="247.0" prefHeight="25.0" prefWidth="250.0" />
+      <Separator layoutY="70.0" prefWidth="800.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="159.0" layoutY="200.0" prefHeight="40.0" prefWidth="150.0" text="Email" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="159.0" layoutY="240.0" prefHeight="40.0" prefWidth="150.0" text="Password" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonReturn" graphicTextGap="55.0" layoutX="706.0" layoutY="14.0" mnemonicParsing="false" onAction="#goHome" prefHeight="40.0" prefWidth="80.0" text="Home">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label layoutX="354.0" layoutY="14.0" text="Sign In" textFill="WHITE">
+         <font>
+            <Font name="Al Tarikh Regular" size="43.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonSave" defaultButton="true" graphicTextGap="55.0" layoutX="332.0" layoutY="290.0" mnemonicParsing="false" onAction="#goToOwner" prefHeight="37.0" prefWidth="137.0" text="Sign In">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="incorrectText" layoutX="334.0" layoutY="362.0" prefHeight="25.0" prefWidth="137.0" text="Incorrect Email and Password Combination. Please Try Again." textFill="#c90000" visible="false" />
+      <Label fx:id="signup" layoutX="282.0" layoutY="506.0" onMouseClicked="#goSignUp" text="Don't have an account? Sign Up here." textFill="WHITE" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="pass" layoutX="281.0" layoutY="544.0" onMouseClicked="#goForgottenPassword" text="Forgotten your password? Click here." textFill="WHITE" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

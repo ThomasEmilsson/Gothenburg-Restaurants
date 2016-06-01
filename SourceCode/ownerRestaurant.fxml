@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- @author Mattias
+	@author Aras -->
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="Restaurant" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OwnerRestaurantController">
+	<children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Back.jpg" />
+         </image>
+      </ImageView>
+		<Button fx:id="buttonBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goOwnerList" prefHeight="40.0" prefWidth="84.0" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+		<Button fx:id="buttonGoHome" layoutX="704.0" layoutY="14.0" mnemonicParsing="false" onAction="#goHome" prefHeight="40.0" prefWidth="84.0" text="HOME">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+		<TextField fx:id="lName" layoutX="287.0" layoutY="70.0" promptText="    Name of Restaurant">
+			<font>
+				<Font size="25.0" />
+			</font>
+		</TextField>
+      <TextField fx:id="lAdress" layoutX="107.0" layoutY="194.0" prefHeight="21.0" prefWidth="227.0" text="Gågatan 1" />
+      <TextField fx:id="lPostalcode" layoutX="107.0" layoutY="219.0" prefHeight="21.0" prefWidth="227.0" text="44444" />
+      <TextField fx:id="lCity" layoutX="107.0" layoutY="244.0" prefHeight="21.0" prefWidth="227.0" text="Gothenburg" />
+      <TextField fx:id="lPhone" layoutX="487.0" layoutY="194.0" prefHeight="21.0" prefWidth="227.0" text="Phone" />
+      <TextField fx:id="lEmail" layoutX="487.0" layoutY="219.0" prefHeight="21.0" prefWidth="227.0" text="Email" />
+      <TextField fx:id="lWebsite" layoutX="487.0" layoutY="244.0" prefHeight="25.0" prefWidth="227.0" text="Website" />
+      <TextField fx:id="lOpeningHours" layoutX="487.0" layoutY="286.0" prefHeight="21.0" prefWidth="227.0" text="Opening Hours" />
+      <TextField fx:id="lAvgPrice" layoutX="487.0" layoutY="317.0" prefHeight="21.0" prefWidth="227.0" text="Avg Price" />
+      <Label layoutX="107.0" layoutY="172.0" prefHeight="21.0" prefWidth="227.0" text="Address:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="487.0" layoutY="171.0" prefHeight="21.0" prefWidth="227.0" text="Contact:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="198.0" prefHeight="17.0" prefWidth="84.0" text="Street address" textFill="WHITE" />
+      <Label layoutX="20.0" layoutY="223.0" prefHeight="17.0" prefWidth="84.0" text="Postal code" textFill="WHITE" />
+      <Label layoutX="20.0" layoutY="248.0" prefHeight="17.0" prefWidth="84.0" text="City" textFill="WHITE" />
+      <Label layoutX="400.0" layoutY="198.0" prefHeight="17.0" prefWidth="84.0" text="Phone number" textFill="WHITE" />
+      <Label layoutX="400.0" layoutY="223.0" prefHeight="17.0" prefWidth="84.0" text="Contact email" textFill="WHITE" />
+      <Label layoutX="400.0" layoutY="248.0" prefHeight="17.0" prefWidth="84.0" text="Website url" textFill="WHITE" />
+      <Label layoutX="400.0" layoutY="290.0" prefHeight="17.0" prefWidth="84.0" text="Opening hours" textFill="WHITE" />
+      <Label layoutX="400.0" layoutY="321.0" prefHeight="17.0" prefWidth="84.0" text="Average price" textFill="WHITE" />
+      <Button fx:id="btnSave" layoutX="132.0" layoutY="551.0" mnemonicParsing="false" onAction="#goSave" prefHeight="33.0" prefWidth="97.0" text="Save" />
+      <TextArea fx:id="lDescription" layoutX="25.0" layoutY="324.0" prefHeight="193.0" prefWidth="311.0" promptText="Description of Restaurant">
+         <font>
+            <Font size="17.0" />
+         </font></TextArea>
+      <Label layoutX="400.0" layoutY="393.0" text="Type of Food" textFill="WHITE" />
+      <MenuButton fx:id="menufoodtypes" layoutX="484.0" layoutY="389.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="227.0" text="Food Types">
+      </MenuButton>
+      <MenuButton fx:id="menuoptions" layoutX="484.0" layoutY="427.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="227.0" text="Options" />
+      <Label layoutX="400.0" layoutY="431.0" text="Options" textFill="WHITE" />
+      <Label fx:id="lblResult" layoutX="249.0" layoutY="551.0" prefHeight="33.0" prefWidth="526.0" textFill="WHITE" />
+      <Label layoutX="487.0" layoutY="353.0" prefHeight="25.0" prefWidth="227.0" text="Mark all available food types and options" textFill="WHITE" />
+	</children>
+</AnchorPane>

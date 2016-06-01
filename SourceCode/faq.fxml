@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  @author Amanda
+	@author Aras
+	@author Thomas-->
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FAQController">
+	<children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FAQ.jpg" />
+         </image>
+      </ImageView>
+		<Separator layoutY="70.0" prefWidth="800.0" />
+		<Label layoutX="228.0" layoutY="14.0" text="Frequently Asked Questions" textFill="WHITE">
+			<font>
+				<Font name="Al Tarikh Regular" size="28.0" />
+			</font>
+		</Label>
+		<Button fx:id="buttonReturn" layoutX="706.0" layoutY="14.0" mnemonicParsing="false" onAction="#goHome" prefHeight="40.0" prefWidth="80.0" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+	</children>
+</AnchorPane>

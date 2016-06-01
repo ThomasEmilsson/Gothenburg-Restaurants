@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- @author Aras -->
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ForgottenPassController">
+	<children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@forgotpass.jpg" />
+         </image>
+      </ImageView>
+		<Separator layoutY="70.0" prefWidth="800.0" />
+		<Label alignment="CENTER" layoutX="246.0" layoutY="14.0" prefHeight="40.0" prefWidth="292.0" text="Forgotten Password" textFill="WHITE">
+			<font>
+				<Font name="Al Tarikh Regular" size="28.0" />
+			</font>
+		</Label>
+		<Button fx:id="buttonHome" graphicTextGap="55.0" layoutX="706.0" layoutY="14.0" mnemonicParsing="false" onAction="#goHome" prefHeight="40.0" prefWidth="80.0" text="Home">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="219.0" layoutY="210.0" prefHeight="40.0" prefWidth="100.0" text="Email" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="210.0" layoutY="254.0" prefHeight="40.0" prefWidth="122.0" text="Phone Number" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="341.0" layoutY="219.0" prefHeight="25.0" prefWidth="171.0" />
+      <PasswordField layoutX="344.0" layoutY="443.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label alignment="CENTER" layoutX="154.0" layoutY="442.0" prefHeight="25.0" prefWidth="196.0" text="Your Password:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonConfirm" graphicTextGap="55.0" layoutX="372.0" layoutY="328.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="100.0" text="Confirm" />
+      <TextField fx:id="phoneNumber" layoutX="343.0" layoutY="262.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label fx:id="pass" layoutX="349.0" layoutY="444.0" prefHeight="25.0" prefWidth="160.0" />
+      <Label fx:id="incorrectText" layoutX="345.0" layoutY="443.0" prefHeight="25.0" prefWidth="171.0" textFill="#c30000" />
+      <Button fx:id="buttonHome1" graphicTextGap="55.0" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="80.0" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+	</children>
+</AnchorPane>
